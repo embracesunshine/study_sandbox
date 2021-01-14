@@ -35,7 +35,7 @@ a.right = c
 c.left = f
 c.right = g
 
-const preorder_traversal = (root, callback, stack = new Stack) => {
+const preorder_traversal = (root, callback, stack = new Stack()) => {
     if(!root) return
     if(typeof callback !== 'function') return
     stack.push(root)
